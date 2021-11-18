@@ -4,7 +4,7 @@ def allnumbers(n):
 
        return 1
 
-   print(n, end=' ')
+   print(n)
 
    allnumbers(n - 1)
 
