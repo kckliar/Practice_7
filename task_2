@@ -1,0 +1,8 @@
+def isPalindrome(s):
+    word = str(s)
+    if word[::-1].startswith(word):
+        print(s, 'является палиндромом')
+    else:
+        print(s,'не является палиндромом')
+s = input('Введите слово: ')
+isPalindrome(s)
