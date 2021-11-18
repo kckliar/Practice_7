@@ -1,0 +1,13 @@
+def allnumbers(n):
+
+   if n == 0:
+
+       return 1
+
+   print(n, end=' ')
+
+   allnumbers(n - 1)
+
+n = int(input("Введите число n: "))
+
+allnumbers(n)
