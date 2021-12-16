@@ -1,0 +1,11 @@
+import sys
+sys.setrecursionlimit(10000)
+
+def towers(n, i, k):
+    if(n==1):
+        print('сдвинуть диск ', 1, ' с стержня ', i, ' на стержень ', k)
+    else:
+        tmp = 6 - i - k
+        towers(n-1, i, tmp)
+        print('сдвинуть диск ', n, ' с стержня ', i, ' на стержень ', k)
+        towers(n-1, tmp, k)
