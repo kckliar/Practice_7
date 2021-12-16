@@ -1,13 +1,8 @@
-def allnumbers(n):
-
-   if n == 0:
-
+def print_till_zero(n):
+    if(n == 0):
        return 1
+    print(n,' ',  end='')
+    return print_till_zero(n - 1)
 
-   print(n)
-
-   allnumbers(n - 1)
-
-n = int(input("Введите число n: "))
-
-allnumbers(n)
+num = int(input('Введите число: '))
+print_till_zero(num)
