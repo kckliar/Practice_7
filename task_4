@@ -1,0 +1,13 @@
+def max_in(list):
+    if(len(list) == 1):
+        return list[0]
+    else:
+        max = max_in(list[1:])
+        if(max>list[0]):
+            return max
+        else:
+            return list[0]
+
+n = [int(item) for item in input('Введите список в строчку: ').split()]
+n = list(n)
+print(max_in(n))
